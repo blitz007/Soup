@@ -1,5 +1,5 @@
 import sys,webbrowser,requests,bs4
-print('Googling...')
+print('Googling...!!!')
 res=requests.get('https://www.google.co.in/search?q='+''.join(sys.argv[1:]))
 res.raise_for_status()
 soup=bs4.BeautifulSoup(res.text)
